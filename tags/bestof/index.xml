@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>bestof on smcleod.net</title><link>https://beta.smcleod.net/tags/bestof/</link><description>Recent content in bestof on smcleod.net</description><generator>Hugo -- gohugo.io</generator><language>en-au</language><copyright>Sam McLeod</copyright><lastBuildDate>Wed, 19 Oct 2022 19:00:00 +0000</lastBuildDate><atom:link href="https://beta.smcleod.net/tags/bestof/index.xml" rel="self" type="application/rss+xml"/><item><title>The Best Of - 2022 Edition</title><link>https://beta.smcleod.net/2022/10/the-best-of-2022-edition/</link><pubDate>Wed, 19 Oct 2022 19:00:00 +0000</pubDate><guid>https://beta.smcleod.net/2022/10/the-best-of-2022-edition/</guid><description>&lt;p>Near the end of each year I note down a summary of the best apps I&amp;rsquo;ve enjoyed using throughout the year, here&amp;rsquo;s 2022.&lt;/p>
+&lt;p>&lt;em>See also &lt;a href="https://smcleod.net/software/2022/05/16/firefox-addons-2022/">Firefox Addons - 2022&lt;/a>&lt;/em>&lt;/p>
+&lt;h2 id="the-best">The Best&lt;/h2>
+&lt;ul>
+&lt;li>MeetingBar (Meetings in your menubar) - &lt;a href="https://github.com/leits/MeetingBar">Get MeetingBar&lt;/a>&lt;/li>
+&lt;li>Reeder (RSS) - &lt;a href="https://www.reederapp.com/">Get Reeder&lt;/a>&lt;/li>
+&lt;li>Shottr (Better screenshots) - &lt;a href="https://shottr.cc/">Get Shottr&lt;/a>&lt;/li>
+&lt;li>Bumpr (Multi-browser rules for links) - &lt;a href="https://www.getbumpr.com/">Get Bumper&lt;/a>&lt;/li>
+&lt;li>Onyx (macOS customisation) - &lt;a href="https://titanium-software.fr/en/onyx.html">Get OnyX&lt;/a>&lt;/li>
+&lt;li>Brew (Package manager) - &lt;a href="https://brew.sh/">Get Brew&lt;/a>
+&lt;ul>
+&lt;li>mas (Mac App Store manager for Brew) - &lt;a href="https://github.com/mas-cli/mas">Get mas&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Little Snitch (Firewall) - &lt;a href="https://obdev.at/products/littlesnitch">Get Little Snitch&lt;/a>
+&lt;ul>
+&lt;li>RadioSilence (Simple Firewall) - &lt;a href="https://radiosilenceapp.com/">Get RadioSilence&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Pixelmator Pro (Image/Photo editor) - &lt;a href="https://www.pixelmator.com/pro/">Get Pixelmator Pro&lt;/a>&lt;/li>
+&lt;li>Keka (Archive/Compression tool) - &lt;a href="https://www.keka.io/">Get Keka&lt;/a>&lt;/li>
+&lt;li>LaunchControl (Frontend for launchd) - &lt;a href="https://www.soma-zone.com/LaunchControl/">Get LaunchControl&lt;/a>&lt;/li>
+&lt;li>Peek (Quicklook plugins) - &lt;a href="https://apps.apple.com/au/app/peek-a-quick-look-extension/id1554235898?mt=12">Get Peek&lt;/a>&lt;/li>
+&lt;li>MusicHarbor (Track new and upcoming music releases) - &lt;a href="https://apps.apple.com/au/app/musicharbor-track-new-music/id1440405750">Get MusicHarbor&lt;/a>&lt;/li>
+&lt;li>DaisyDisk (Disk usage inspector) - &lt;a href="https://daisydiskapp.com/">Get DaisyDisk&lt;/a>&lt;/li>
+&lt;li>Things (GTD/Notes/Lists app) - &lt;a href="https://culturedcode.com/things/">Get Thing&lt;/a>&lt;/li>
+&lt;li>BetterTouchTool (macOS automation and customisation) - &lt;a href="https://folivora.ai/">Get BetterTouchTool&lt;/a>&lt;/li>
+&lt;li>Parcel (Track parcels) - &lt;a href="https://apps.apple.com/au/app/parcel/id375589283">Get Parcel&lt;/a>&lt;/li>
+&lt;li>Backblaze (Backups) - &lt;a href="https://www.backblaze.com/">Get Backblaze&lt;/a>&lt;/li>
+&lt;li>MicroSnitch (Get notifications for active mic/webcam) - &lt;a href="https://obdev.at/products/microsnitch/index.html">Get Micro Snitch&lt;/a>&lt;/li>
+&lt;li>Handbrake (Transcode video files) - &lt;a href="https://handbrake.fr/">Get Handbrake&lt;/a>&lt;/li>
+&lt;li>Amphetamine (Keep you mac awake) - &lt;a href="https://apps.apple.com/us/app/amphetamine/id937984704?mt=12">Get Amphetamine&lt;/a>&lt;/li>
+&lt;li>Bear (Markdown/notes/web clipping) - &lt;a href="https://bear.app/">Get Bear&lt;/a>&lt;/li>
+&lt;li>Calibre (eBook management and conversation) - &lt;a href="https://calibre-ebook.com/">Get Calibre&lt;/a>&lt;/li>
+&lt;li>ImageOptim Beta (Image compression) - &lt;a href="https://imageoptim.com/ImageOptim1.8.9a1.tar.bz2">Get ImageOptim&lt;/a>
+&lt;ul>
+&lt;li>&lt;em>Note: This is a beta version, but it&amp;rsquo;s the only version that supports Apple Silicon natively, the author is working on &lt;a href="https://github.com/ImageOptim/ImageOptim/issues/354">ImageOptim 2 - A complete rewrite&lt;/a>&lt;/em>.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Strongbox (Native password/secrets management) - &lt;a href="https://strongboxsafe.com/">Get StrongBox&lt;/a>
+&lt;ul>
+&lt;li>&lt;em>Note: I will likely eventually replace 1Password with Strongbox, it&amp;rsquo;s a native app (not Electron!), currently waiting on official browser extensions&lt;/em>.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Stay (Window management) - &lt;a href="https://cordlessdog.com/stay/">Get Stay&lt;/a>&lt;/li>
+&lt;li>Firefox (Don&amp;rsquo;t run a browser from an ad company) - &lt;a href="https://www.mozilla.org/en-GB/firefox/new/">Get Firefox&lt;/a>&lt;/li>
+&lt;li>Fastmail (Email) - &lt;a href="https://www.fastmail.com">Get Fastmail&lt;/a>&lt;/li>
+&lt;li>mu-repo (Run bulk commands across git repos) - &lt;a href="https://fabioz.github.io/mu-repo/">Get mu-repo&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>You can find all the applications I use, along with my shell config and plugins within the &lt;a href="https://github.com/sammcj/zsh-bootstrap">BrewFile&lt;/a> which I use to bootstrap my macOS machines.&lt;/p>
+&lt;h2 id="the-worst">The Worst&lt;/h2>
+&lt;ul>
+&lt;li>💩 AWS CDK 💩&lt;/li>
+&lt;li>💩 1Password 8 💩&lt;/li>
+&lt;li>💩 Microsoft Teams 💩&lt;/li>
+&lt;li>💩 Microsoft Office365 💩&lt;/li>
+&lt;/ul></description></item><item><title>The Best Of - 2020 Edition</title><link>https://beta.smcleod.net/2020/10/the-best-of-2020-edition/</link><pubDate>Sat, 10 Oct 2020 16:00:00 +0000</pubDate><guid>https://beta.smcleod.net/2020/10/the-best-of-2020-edition/</guid><description>&lt;p>Near the end of every year I note down a summary of the best apps, hardware &amp;amp; podcasts I&amp;rsquo;ve enjoyed throughout the year (and often for some time before).&lt;/p></description></item><item><title>The Best Of - 2014 Edition</title><link>https://beta.smcleod.net/2015/02/the-best-of-2014-edition/</link><pubDate>Sun, 15 Feb 2015 00:00:00 +0000</pubDate><guid>https://beta.smcleod.net/2015/02/the-best-of-2014-edition/</guid><description>At the end of every year I note down a summary of the best applications, hardware &amp;amp; websites I&amp;rsquo;ve enjoyed &amp;amp; depended on throughout the year (and often for some time before).
+Software / General Use Fastmail - https://www.fastmail.com Evernote - https://evernote.com Reeder - http://reederapp.com Keynote - https://www.apple.com/au/mac/keynote Lastpass - https://lastpass.com Plex - https://plex.tv Calibre - http://calibre-ebook.com Software / Geek Use Sublime Text - http://www.sublimetext.com/3 Homebrew - http://brew.sh DropSync - http://mudflatsoftware.</description></item></channel></rss>

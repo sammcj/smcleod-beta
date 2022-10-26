@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>privacy on smcleod.net</title><link>https://beta.smcleod.net/tags/privacy/</link><description>Recent content in privacy on smcleod.net</description><generator>Hugo -- gohugo.io</generator><language>en-au</language><copyright>Sam McLeod</copyright><lastBuildDate>Mon, 23 Feb 2015 00:00:00 +0000</lastBuildDate><atom:link href="https://beta.smcleod.net/tags/privacy/index.xml" rel="self" type="application/rss+xml"/><item><title>Delete Government-Linked Certificate Authorities in OSX</title><link>https://beta.smcleod.net/2015/02/delete-government-linked-certificate-authorities-in-osx/</link><pubDate>Mon, 23 Feb 2015 00:00:00 +0000</pubDate><guid>https://beta.smcleod.net/2015/02/delete-government-linked-certificate-authorities-in-osx/</guid><description>&lt;p>&lt;a href="http://zitseng.com/archives/7489">Inspired by http://zitseng.com/archives/7489&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/sammcj/delete-unknown-root-ca">Source (Github)&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>WARNINGS&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Do not run unless you understand what this is doing&lt;/li>
+&lt;li>The CA system is broken by design - This is not a fix for that&lt;/li>
+&lt;li>This is merely a band-aid for those interested or concerned about these root CAs&lt;/li>
+&lt;/ul></description></item></channel></rss>
