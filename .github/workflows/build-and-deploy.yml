@@ -1,0 +1,66 @@
+name: Build Hugo Site and Release
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  checks: write
+  pull-requests: write
+
+# One build per branch, cancel out of date builds
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: true # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
+
+      - name: Determine baseURL
+        id: beta
+        run: |
+          if [[ ${{ github.ref }} == refs/heads/main ]]; then
+            echo "baseURL=https://smcleod.net" >> $GITHUB_OUTPUT
+          else
+            echo "baseURL=https://beta.smcleod.net" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+          extended: true
+
+      - name: Build
+        run: |
+          hugo \
+            --minify \
+            --baseURL "${{ steps.beta.outputs.baseURL }}/"
+        env:
+          HUGO_ENVIRONMENT: production
+          HUGO_ENV: production
+
+      - name: Prepare tag
+        id: prepare_tag
+        if: startsWith(github.ref, 'refs/tags/')
+        run: |
+          TAG_NAME="${GITHUB_REF##refs/tags/}"
+          echo "tag_name=${TAG_NAME}" >> $GITHUB_OUTPUT
+          echo "deploy_tag_name=deploy-${TAG_NAME}" >> $GITHUB_OUTPUT
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          tag_name: ${{ steps.prepare_tag.outputs.deploy_tag_name }}
+          tag_message: "Deployment ${{ steps.prepare_tag.outputs.tag_name }}"
