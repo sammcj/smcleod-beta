@@ -1,0 +1,20 @@
+# title: My awesome website
+# hugeTitle: true
+# subtitle: Some fancy subtitle
+# image: /jumbotron_image.svg
+# imagePosition: left # values: left, right, top, bottom
+# background: /img/jumbotron_bg.png
+# backgroundVideo: /jumbotron_video.mp4 # will replace the background image
+# # it's best to provide both an mp4 and a web source for the video for better compatibility
+# backgroundVideoMp4: /jumbotron_video.mp4
+# backgroundVideoWebm: /jumbotron_video.webm
+# videoOpacity: 1.0
+# textShadow: false
+# fullscreen: false
+# downArrow: false
+# whiteText: false # force white text in the jumbotron
+# links:
+#   - title: About me
+#     link: /pages/about
+#   - title: Read my blog
+#     link: /posts
