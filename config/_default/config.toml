@@ -1,5 +1,5 @@
 theme = "DoIt"
-baseURL = "https://beta.smcleod.net" #TODO: update me before go live
+baseURL = "https://smcleod.net"
 languageCode = "en"
 languageName = "English"
 hasCJKLanguage = false
@@ -384,87 +384,3 @@ titleFontFamily = "Atkinson Hyperlegible"
   category = "categories"
   tag = "tags"
   series = "series"
-
-
-
-
-
-
-
-
-
-
-### Options for ficurinia" theme ####
-
-#theme = "hugo-ficurinia" #archie
-# enableInlineShortcodes = true
-
-
-# [markup]
-#   [markup.highlight]
-#     tabWidth = 2
-#     codeFences = true
-#     wrapCode = true
-#     style = "dracula"
-#     # false is a necessary configuration (https://github.com/dillonzq/LoveIt/issues/158)
-#     noClasses = false
-
-# [imaging]
-#   anchor = "Smart"
-#   bgColor = '#242629'
-#   hint = "photo"
-#   quality = 75
-#   resampleFilter = "Box"
-#   [imaging.exif]
-#     disableLatLong = true
-
-# [imaging]
-#   anchor = "Smart"
-#   bgColor = '#242629'
-#   hint = "photo"
-#   quality = 75
-#   resampleFilter = "Box"
-#   [imaging.exif]
-#     disableLatLong = true
-
-  # imageInArticlePreview = true
-  # fitImageInArticlePreview = false
-  # enableFeatured = true
-  # navtype = "standard"
-  # menuStyle = "buttons"
-  # searchMenuLink = false
-  # showTags = true
-  # showRss = true
-  # buttonTags = true
-
-  # fontFamily = "Atkinson Hyperlegible"
-  # titleFontFamily = "Atkinson Hyperlegible"
-  # monospaceFontFamily = "JetBrains Mono"
-  # titleFontSizeMultiplier = 1.1
-  # mainFontSizeMultiplier = 1.0
-  # monoFontSizeMultiplier = 1.0
-
-  # enableSidebarLayout = false
-  # tocInSidebar = true
-  # enableRelatedArticles = true
-  # enableFooterColumns = true
-
-# # Social Tags
-# [[menu.icons]]
-#     identifier = "github"
-#     name = "Github"
-#     url = "https://github.com/sammcj"
-#     weight = 10
-
-# [[menu.icons]]
-#     identifier = "twitter"
-#     name = "Twitter"
-#     url = "https://twitter.com/s_mcleod"
-#     weight = 20
-
-# [[menu.icons]]
-#     identifier = "linkedin"
-#     name = "LinkedIn"
-#     url = "https://linkedin.com/in/sammcj"
-#     weight = 30
-
