@@ -1,5 +1,5 @@
 # Sample workflow for building and deploying a Hugo site to GitHub Pages
-name: Deploy Hugo site to Pages
+name: Deploy Hugo beta site to Pages
 
 on:
   push:
@@ -21,31 +21,21 @@ defaults:
   run:
     shell: bash
 
+env:
+  baseURL: "https://beta.smcleod.net"
+
 jobs:
   build:
+    if: github.repository == 'smcleod/smcleod-beta'
     strategy:
       matrix:
-        environment: ['production'] # 'staging'
+        environment: ['production']
     runs-on: ubuntu-22.04
-    outputs:
-      baseurl: ${{ steps.set_variables.outputs.baseurl }}
     steps:
       - name: Checkout
         uses: actions/checkout@v3
         with:
           submodules: recursive
-
-      - name: Setup variables for ${{ matrix.environment }}
-        id: set_variables
-        run: |
-          echo "Setting up variables for ${{ matrix.environment }}" >> $GITHUB_STEP_SUMMARY
-          if [[ ${{ matrix.environment }} == 'production' ]]; then
-            BASEURL="https://smcleod.net"
-          else
-            BASEURL="https://staging.smcleod.net"
-          fi
-          echo "$BASEURL" > static/CNAME
-          echo "baseurl=${BASEURL}" >> $GITHUB_OUTPUT
 
       - name: Setup Pages
         id: pages
@@ -61,7 +51,7 @@ jobs:
         run: |
           hugo \
             --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"
+            --baseURL "${{ env.baseURL }}"
         env:
           HUGO_ENVIRONMENT: ${{ matrix.environment }}
           HUGO_ENV: ${{ matrix.environment }}
@@ -82,10 +72,11 @@ jobs:
   # Deploy job
   deploy:
     needs: build
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-22.04
     environment:
       name: github-pages
-      url: ${{ needs.build.outputs.baseurl }}
+      url: ${{ env.baseURL }}
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
