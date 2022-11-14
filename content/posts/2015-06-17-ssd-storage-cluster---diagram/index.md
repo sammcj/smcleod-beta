@@ -3,10 +3,12 @@ author: "Sam McLeod"
 readingTime: true
 categories: [ Tech ]
 date: "2015-06-17T00:00:00Z"
-series: [ ssd-san ]
+series: [ Storage ]
 aliases:
   - /tech/2015/06/17/ssd-storage-cluster-diagram/
-image: backdrop-feetsky.jpg
+  - /tech/ssd-storage-cluster-diagram/
+  - /tech/2015/06/17/ssd-storage-cluster-diagram.html
+images: ["backdrop-feetsky.jpg"]
 featuredImagePreview: backdrop-feetsky.jpg
 tags:
 - tech

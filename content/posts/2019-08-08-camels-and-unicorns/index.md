@@ -5,7 +5,8 @@ categories: [ DevOps ]
 date: "2019-08-08T08:10:00Z"
 aliases:
   - /tech/2019/08/08/camels-and-unicorns/
-image: camel_corn.jpeg
+  - /tech/2019/08/08/camels-and-unicorns.html
+images: ["camel_corn.jpeg"]
 featuredImagePreview: camel_corn.jpeg
 tags:
 - tech

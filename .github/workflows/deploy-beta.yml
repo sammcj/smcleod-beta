@@ -1,5 +1,4 @@
-# Sample workflow for building and deploying a Hugo site to GitHub Pages
-name: Deploy Hugo beta site to Pages
+name: Deploy Hugo BETA site to Pages
 
 on:
   push:
@@ -14,7 +13,7 @@ permissions:
 
 # Allow one concurrent deployment
 concurrency:
-  group: "pages"
+  group: "pages-beta"
   cancel-in-progress: true
 
 defaults:
@@ -25,11 +24,11 @@ env:
   baseURL: "https://beta.smcleod.net"
 
 jobs:
-  build:
-    if: github.repository == 'smcleod/smcleod-beta'
+  build-beta:
+    if: github.repository == 'sammcj/smcleod-hugo'
     strategy:
       matrix:
-        environment: ['production']
+        environment: ['staging']
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout
@@ -51,7 +50,8 @@ jobs:
         run: |
           hugo \
             --minify \
-            --baseURL "${{ env.baseURL }}"
+            --baseURL "${{ env.baseURL }}" \
+            --config config.beta.toml # Beta / Staging config
         env:
           HUGO_ENVIRONMENT: ${{ matrix.environment }}
           HUGO_ENV: ${{ matrix.environment }}
@@ -70,9 +70,9 @@ jobs:
           path: ./public
 
   # Deploy job
-  deploy:
-    needs: build
-    if: github.ref == 'refs/heads/main'
+  deploy-beta:
+    needs: build-beta
+    if: github.ref == 'refs/heads/main' && github.repository == 'sammcj/smcleod-hugo'
     runs-on: ubuntu-22.04
     environment:
       name: github-pages

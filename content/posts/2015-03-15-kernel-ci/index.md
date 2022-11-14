@@ -5,8 +5,8 @@ categories: [ Tech, CICD ]
 date: "2015-03-15T00:00:00Z"
 aliases:
   - /tech/2015/03/15/kernel-ci/
-#description:Continuous integration for the Linux Kernel - Built within Docker
-image: backdrop-zbuildings.jpg
+  - /continuous-integration-for-the-linux-kernel-built-within-docker
+images: ["backdrop-zbuildings.jpg"]
 featuredImagePreview: backdrop-zbuildings.jpg
 tags:
 - tech

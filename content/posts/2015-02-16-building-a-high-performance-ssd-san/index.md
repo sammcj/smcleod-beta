@@ -6,9 +6,10 @@ categories: [ Tech ]
 date: "2015-02-16T00:00:00Z"
 aliases:
   - /tech/2015/02/16/building-a-high-performance-ssd-san/
-image: melbourne.jpg
+  - /building-a-high-performance-ssd-san/
+images: ["melbourne.jpg"]
 featuredImagePreview: melbourne.jpg
-series: [ ssd-san ]
+series: [ Storage ]
 tags:
 - tech
 - storage
@@ -157,7 +158,7 @@ Stay tuned!
 * [1-2 year SSD wear on build boxes has been minimal](https://news.ycombinator.com/item?id=9052925)
 * From way back in 2011 - 'Velocity 2011: Artur Bergman - Artur on SSDs':
 
-{{< youtube H7PJ1oeEyGg >}}
+{{< youtube "H7PJ1oeEyGg" >}}
 
 [1]: http://en.m.wikipedia.org/wiki/Storage_area_network "Storage area network"
 [2]: http://en.m.wikipedia.org/wiki/Terabyte "Terabyte"
