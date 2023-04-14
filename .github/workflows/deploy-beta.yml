@@ -32,16 +32,16 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@8e5e7e5ab8b370d6c329ec480221332ada57f0ab # v3
         with:
           submodules: recursive
 
       - name: Setup Pages
         id: pages
-        uses: actions/configure-pages@v2
+        uses: actions/configure-pages@c5a3e1159e0cbdf0845eb8811bd39e39fc3099c2 # v2
 
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
+        uses: peaceiris/actions-hugo@16361eb4acea8698b220b76c0d4e84e1fd22c61d # v2
         with:
           hugo-version: 'latest'
           extended: true
@@ -65,7 +65,7 @@ jobs:
           echo "deploy_tag_name=deploy-${TAG_NAME}" >> $GITHUB_OUTPUT
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@64bcae551a7b18bcb9a09042ddf1960979799187 # v1
         with:
           path: ./public
 
@@ -80,4 +80,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@dcda0bb2bcba68842abb9414982734cde54a96d8 # v1
